@@ -292,3 +292,4 @@ document.getElementById("userInput").addEventListener("keypress", function(event
       sendMessage();
   }
 });
+
