@@ -1,15 +1,4 @@
-/**
-* Template Name: Arsha
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Updated: Jun 14 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -22,7 +11,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #0ea8f0; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
@@ -37,9 +26,9 @@
 
 /* Template Custom Colors */
 /* BACKGROUND GROUND */
-:root {
-  --hero-background-color: #37517e;
-  --hero-color: #ffffff;
+  :root {
+    --hero-background-color: #211e31;
+    --hero-color: #ffffff;
 
   
 }
@@ -2236,3 +2225,162 @@ p {
     font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  .navmenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background: rgba(236, 229, 229, 0.1);
+    backdrop-filter: blur(10px);
+
+  }
+
+  .navmenu ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0; /* Add spacing between buttons */
+  }
+
+  .navmenu ul li a {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #86749e; /* Customize button color */
+    color: rgb(17, 7, 26);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navmenu ul li a:hover {
+    background-color: #6c27bb; /* Darker shade on hover */
+  }
+
+  /* Mobile navigation toggle button */
+  .mobile-nav-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f8f6f5;
+  }
+}
+/* Clients Section Styling */
+.clients {
+  padding: 30px 0;
+  background: linear-gradient(135deg, #0d162b, #1e3a8a);
+  text-align: center;
+}
+
+/* Move Swiper Down */
+.swiper {
+  padding: 10px 0;
+  margin-top: 20px;  /* Push the slider down */
+}
+
+/* Client Logo Styling */
+.client-logo {
+  max-width: 100px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.client-logo:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Move Pagination Down */
+.swiper-pagination {
+  margin-top: 30px;  /* Push dots further down */
+  display: flex;
+  justify-content: center;
+}
+
+/* Pagination Dots Styling */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #00ffcc;
+}
+
+
+/* Style Pagination Dots */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #00ffcc;
+}
+
+/* Move Pagination Dots Further Down */
+.swiper-pagination {
+  position: relative !important; /* Ensure it stays below */
+  margin-top: 30px !important;  /* Adjust the distance */
+  display: flex;
+  justify-content: center;
+}
+
+/* mobile view */
+
+@media (max-width: 768px) { 
+  /* Reduce Section Padding */
+  .clients {
+    padding: 20px 0;
+  }
+
+  /* Reduce Logo Size */
+  .swiper-slide img {
+    max-width: 10px;  /* Shrink logos */
+  }
+
+  /* Adjust Swiper Pagination Dots */
+  .swiper-pagination {
+    margin-top: 25px !important; /* Move dots slightly down */
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 480px) { 
+  /* Further Reduce Client Section */
+  .clients {
+    padding: 20px 0;
+  }
+
+  /* Smaller Logos */
+  .swiper-slide img {
+    max-width: 60px;  /* Even smaller logos */
+  }
+
+  /* Move Pagination Further Down */
+  .swiper-pagination {
+    margin-top: 20px !important;
+  }
+
+  /* Compact Dots */
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
+}
