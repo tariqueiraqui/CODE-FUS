@@ -2384,3 +2384,95 @@ p {
     margin: 0 3px;
   }
 }
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #05101b;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #6c757d; 
+}
+
+/* Career Opening Card */
+.career-opening {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.career-opening:hover {
+  transform: scale(1.05);
+}
+
+.career-opening .pic {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.career-opening img {
+  border-radius: 50%;
+}
+
+.career-opening h4 {
+  font-size: 24px;
+  color: #333;
+}
+
+.career-opening span {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.career-opening p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.career-opening .requirements {
+  margin-top: 10px;
+}
+
+.career-opening .requirements strong {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.career-opening .requirements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.career-opening .requirements li {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Apply Button */
+.apply-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.apply-btn:hover {
+  background: #218838;
+}
